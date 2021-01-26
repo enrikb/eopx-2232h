@@ -21,3 +21,6 @@ as output. Obviously, when configured as output, the pin can't be used as 'ready
 I managed to use [frida](https://frida.re/) to patch the MPSSE program sequences to leave `GPIOL1`
 configured as input. Further, it patches the FTDI library's response to report an ID 4 chip when it
 detects an ID 6 chip.
+
+Connecting `ADIO7` to `GPIOL1` while leaving the other connections like in the EDK 350 schematic and
+using the wrapper scripts from this project, the original programming tools have been used successfully.
